@@ -1,0 +1,12 @@
+{
+    "date": "Mon Jun 18 23:37:26 CEST 2018",
+    "name": "DemoAddons",
+    "format": "xml",
+    "description": "",
+    "repository": {
+        "type": "url",
+        "url": "https://www.simplicite.io/resources/modules/demo-addons-4.0.xml"
+    },
+    "version": "4.0",
+    "dependencies": [{"Simplicite": "4.0"}]
+}

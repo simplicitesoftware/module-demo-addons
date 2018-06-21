@@ -109,7 +109,7 @@
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>ObjectExternal/DemoRevenueAnalysis-resources/SCRIPT.js</res_file>
-		<res_file_compiled/>
+		<res_file_compiled>ObjectExternal/DemoRevenueAnalysis-resources/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 	</data>

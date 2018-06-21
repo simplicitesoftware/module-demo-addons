@@ -7,7 +7,7 @@
 		<mdl_name>DemoAddons</mdl_name>
 		<mdl_version>4.0</mdl_version>
 		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-addons-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-06-18 23:37:26</mdl_lastupd>
+		<mdl_lastupd>2018-06-21 13:07:09</mdl_lastupd>
 		<mdl_comment/>
 	</data>
 </object>
@@ -22,7 +22,7 @@
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/DemoAddons/DemoRevenueAnalysis.java</obe_script_id>
-		<obe_icon/>
+		<obe_icon>bars</obe_icon>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 	</data>
 </object>
@@ -95,6 +95,24 @@
 <object>
 	<name>Resource</name>
 	<action>upsert</action>
+	<data>
+		<res_object>
+			<object>
+				<name>ObjectExternal</name>
+				<data>
+					<obe_name>DemoRevenueAnalysis</obe_name>
+				</data>
+			</object>
+		</res_object>
+		<res_type>HTML</res_type>
+		<res_lang>ANY</res_lang>
+		<res_code>HTML</res_code>
+		<res_cached>0</res_cached>
+		<res_file>ObjectExternal/DemoRevenueAnalysis-resources/HTML.html</res_file>
+		<res_file_compiled/>
+		<res_image/>
+		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
+	</data>
 	<data>
 		<res_object>
 			<object>

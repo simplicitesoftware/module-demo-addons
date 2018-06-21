@@ -1,3 +1,5 @@
+if (typeof DemoRevenueAnalysis === "undefined") DemoRevenueAnalysis = (function() {
+
 function grid(fields, data, expRow, expColumn) {
 	DevExpress.viz.currentTheme("generic.light");
 
@@ -47,3 +49,7 @@ function grid(fields, data, expRow, expColumn) {
 
     setTimeout(expand, 0);
 }
+
+return { grid: grid };
+
+})();

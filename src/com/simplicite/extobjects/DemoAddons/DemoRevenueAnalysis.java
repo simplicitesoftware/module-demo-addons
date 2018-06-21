@@ -23,13 +23,9 @@ public class DemoRevenueAnalysis extends ExternalObject {
 		try {
 			appendCSSIncludes(new String[] {
 				"https://cdn3.devexpress.com/jslib/18.1.3/css/dx.common.css",
-				"https://cdn3.devexpress.com/jslib/18.1.3/css/dx.light.css",
-				getResourceJSURL("STYLES")
+				"https://cdn3.devexpress.com/jslib/18.1.3/css/dx.light.css"
 			});
-			appendJSIncludes(new String[] {
-				"https://cdn3.devexpress.com/jslib/18.1.3/js/dx.all.js",
-				getResourceJSURL("SCRIPT")
-			});
+			appendJSInclude("https://cdn3.devexpress.com/jslib/18.1.3/js/dx.all.js");
 
 			String inst = params.getParameter("inst");
 			ObjectDB obj = getGrant().getObject(inst, "DemoOrder");
@@ -46,17 +42,8 @@ public class DemoRevenueAnalysis extends ExternalObject {
 			String data = c.toJSONCubes();
 			c.clear();
 
-			return
-				"<div class=\"dx-viewport demo-container\">" +
-					"<div id=\"pivotgrid-demo\">" +
-						"<div id=\"pivotgrid-chart\"></div>" +
-						"<div id=\"pivotgrid\">" + getGrant().T("LOADING") + "</div>" +
-					"</div>" +
-				"</div>" +
-				HTMLTool.jsBlock(
-					"onload_functions.push(function() {" +
-						"grid(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() +");" +
-					"});");
+			String js = this.getName() + ".grid(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() +");";
+			return javascript(!getGrant().isResponsive() ? HTMLTool.jsOnload(js) : js);
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());
 			return e.getMessage();

@@ -42,7 +42,7 @@ public class DemoRevenueAnalysis extends ExternalObject {
 			String data = c.toJSONCubes();
 			c.clear();
 
-			String js = this.getName() + ".grid(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() +");";
+			String js = this.getName() + ".render(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() +");";
 			return javascript(!getGrant().isResponsive() ? HTMLTool.jsOnload(js) : js);
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());

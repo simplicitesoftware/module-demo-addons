@@ -38,7 +38,7 @@ To import this module:
 ```
 
 - Click on the _Import module_ button
-- 
+
 
 `DemoRevenueAnalysis` external object definition
 ------------------------------------------------

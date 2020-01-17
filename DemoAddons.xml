@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-01-17 15:16:52</mdl_lastupd>
+		<mdl_lastupd>2020-01-17 15:34:37</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This module contains the following addons for the demo **order management** application.:
@@ -41,7 +41,7 @@ To import this module:
 ```
 
 - Click on the _Import module_ button
-- ]]></mdl_comment>
+]]></mdl_comment>
 	</data>
 </object>
 <object>

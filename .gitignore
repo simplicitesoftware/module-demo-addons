@@ -1,2 +1,13 @@
-/bin/
-/build/
+/bin
+/build
+/target
+/effective.pom
+/.project
+/.classpath
+/.settings
+/.idea
+/*.iml
+/.scannerwork
+/.gradle
+/**/Thumbs.db
+/**/.DS_Store

@@ -6,9 +6,42 @@
 	<data>
 		<mdl_name>DemoAddons</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_url><![CDATA[https://www.simplicite.io/resources/modules/demo-addons-4.0.xml]]></mdl_url>
-		<mdl_lastupd>2018-06-21 13:07:09</mdl_lastupd>
-		<mdl_comment/>
+		<mdl_prefix/>
+		<mdl_url><![CDATA[{
+	"type": "git",
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"
+	}
+}]]></mdl_url>
+		<mdl_lastupd>2020-01-17 15:16:52</mdl_lastupd>
+		<mdl_comment><![CDATA[### Introduction
+
+This module contains the following addons for the demo **order management** application.:
+
+- A reporting addon based on the [DevExpress Javascript library](https://js.devexpress.com)
+
+### Prerequisites
+
+The `Demo` module **must** be installed and configured before importing this addon module.
+
+### Import
+
+To import this module:
+
+- Create a module named `DemoAddons`
+- Set the settings as:
+
+```json
+{
+	"type": "git",
+	"origin": {
+		"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"
+	}
+}
+```
+
+- Click on the _Import module_ button
+- ]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -18,7 +51,7 @@
 		<obe_name>DemoRevenueAnalysis</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment/>
+		<obe_comment><![CDATA[Revenue analysis custom page]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/DemoAddons/DemoRevenueAnalysis.java</obe_script_id>
@@ -46,6 +79,7 @@
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 		<act_exec>FRT</act_exec>
 		<act_count/>
+		<act_order/>
 	</data>
 </object>
 <object>
@@ -53,6 +87,7 @@
 	<action>upsert</action>
 	<data>
 		<fct_name>DEMO_ANALYSIS-A</fct_name>
+		<fct_object_id.obj_type>O</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoOrder</fct_object_id.obj_name>
 		<fct_function>A</fct_function>
 		<fct_action_id.act_name>DEMO_REVENUEANALYSIS</fct_action_id.act_name>
@@ -61,6 +96,7 @@
 	</data>
 	<data>
 		<fct_name>DemoRevenueAnalysis-E</fct_name>
+		<fct_object_id.obj_type>E</fct_object_id.obj_type>
 		<fct_object_id.obj_name>DemoRevenueAnalysis</fct_object_id.obj_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
@@ -74,9 +110,9 @@
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>DEMO_ANALYSIS-A</grt_function_id.fct_name>
-		<fct_object_id.obj_type>O</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoOrder</fct_object_id.obj_name>
-		<fct_action_id.act_name>DEMO_REVENUEANALYSIS</fct_action_id.act_name>
+		<grt_function_id.fct_object_id.obj_type>O</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>DemoOrder</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name>DEMO_REVENUEANALYSIS</grt_function_id.fct_action_id.act_name>
 		<grt_function_id.fct_function>A</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
@@ -84,9 +120,9 @@
 	<data>
 		<grt_group_id.grp_name>DEMO_ADMIN</grt_group_id.grp_name>
 		<grt_function_id.fct_name>DemoRevenueAnalysis-E</grt_function_id.fct_name>
-		<fct_object_id.obj_type>E</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoRevenueAnalysis</fct_object_id.obj_name>
-		<fct_action_id.act_name/>
+		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
+		<grt_function_id.fct_object_id.obj_name>DemoRevenueAnalysis</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
@@ -108,7 +144,7 @@
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoRevenueAnalysis-resources/HTML.html</res_file>
+		<res_file>resources/ObjectExternal/DemoRevenueAnalysis/HTML.html</res_file>
 		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
@@ -126,8 +162,8 @@
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>ObjectExternal/DemoRevenueAnalysis-resources/SCRIPT.js</res_file>
-		<res_file_compiled>ObjectExternal/DemoRevenueAnalysis-resources/SCRIPT.min.js</res_file_compiled>
+		<res_file>resources/ObjectExternal/DemoRevenueAnalysis/SCRIPT.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoRevenueAnalysis/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 	</data>

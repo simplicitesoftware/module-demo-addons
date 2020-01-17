@@ -1,12 +1,10 @@
 {
-    "date": "Thu Jun 21 13:07:09 CEST 2018",
+    "date": "Fri Jan 17 15:16:52 CET 2020",
     "name": "DemoAddons",
     "format": "xml",
-    "description": "",
-    "repository": {
-        "type": "url",
-        "url": "https://www.simplicite.io/resources/modules/demo-addons-4.0.xml"
-    },
+    "description": "### Introduction\n\nThis module contains the following addons for the demo **order management** application.:\n\n- A reporting addon based on the [DevExpress Javascript library](https://js.devexpress.com)\n\n### Prerequisites\n\nThe `Demo` module **must** be installed and configured before importing this addon module.\n\n### Import\n\nTo import this module:\n\n- Create a module named `DemoAddons`\n- Set the settings as:\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": {\n\t\t\"uri\": \"https://github.com/simplicitesoftware/module-demo-addons.git\"\n\t}\n}\n```\n\n- Click on the _Import module_ button\n- ",
+    "files": ["DemoAddons.xml"],
+    "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"}},
     "version": "4.0",
     "dependencies": [{"Simplicite": "4.0"}]
 }

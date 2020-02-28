@@ -6,14 +6,14 @@
 	<data>
 		<mdl_name>DemoAddons</mdl_name>
 		<mdl_version>4.0</mdl_version>
-		<mdl_prefix/>
+		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
 	"type": "git",
 	"origin": {
 		"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-27 11:20:03</mdl_lastupd>
+		<mdl_lastupd>2020-02-28 22:02:58</mdl_lastupd>
 		<mdl_comment><![CDATA[### Introduction
 
 This module contains the following addons for the demo **order management** application.:

@@ -1,5 +1,5 @@
 {
-    "date": "Thu Feb 27 11:20:03 CET 2020",
+    "date": "Fri Feb 28 22:02:58 CET 2020",
     "name": "DemoAddons",
     "format": "xml",
     "description": "### Introduction\n\nThis module contains the following addons for the demo **order management** application.:\n\n- A reporting addon based on the [DevExpress Javascript library](https://js.devexpress.com)\n\n### Prerequisites\n\nThe `Demo` module **must** be installed and configured before importing this addon module.\n\n### Import\n\nTo import this module:\n\n- Create a module named `DemoAddons`\n- Set the settings as:\n\n```json\n{\n\t\"type\": \"git\",\n\t\"origin\": {\n\t\t\"uri\": \"https://github.com/simplicitesoftware/module-demo-addons.git\"\n\t}\n}\n```\n\n- Click on the _Import module_ button\n",

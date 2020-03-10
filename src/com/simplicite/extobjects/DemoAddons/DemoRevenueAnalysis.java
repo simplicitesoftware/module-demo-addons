@@ -5,7 +5,6 @@ import com.simplicite.util.Crosstab;
 import com.simplicite.util.ExternalObject;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.Tool;
-import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
 
 /**

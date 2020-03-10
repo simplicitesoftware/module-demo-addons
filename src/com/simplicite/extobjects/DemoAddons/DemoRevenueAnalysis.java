@@ -9,7 +9,7 @@ import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
 
 /**
- * External object ExampleDevExtreme
+ * Revenue analysis
  */
 public class DemoRevenueAnalysis extends ExternalObject {
 	private static final long serialVersionUID = 1L;
@@ -25,7 +25,9 @@ public class DemoRevenueAnalysis extends ExternalObject {
 				"https://cdn3.devexpress.com/jslib/18.1.3/css/dx.common.css",
 				"https://cdn3.devexpress.com/jslib/18.1.3/css/dx.light.css"
 			});
-			appendJSInclude("https://cdn3.devexpress.com/jslib/18.1.3/js/dx.all.js");
+			appendJSInclude(
+				"https://cdn3.devexpress.com/jslib/18.1.3/js/dx.all.js"
+			);
 
 			String inst = params.getParameter("inst");
 			ObjectDB obj = getGrant().getObject(inst, "DemoOrder");
@@ -42,8 +44,7 @@ public class DemoRevenueAnalysis extends ExternalObject {
 			String data = c.toJSONCubes();
 			c.clear();
 
-			String js = this.getName() + ".render(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() +");";
-			return javascript(!getGrant().isResponsive() ? HTMLTool.jsOnload(js) : js);
+			return javascript(getName() + ".render(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() +");");
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());
 			return e.getMessage();

@@ -2,7 +2,7 @@
 // Client side JavaScript for revenue analysis
 //-----------------------------------------------------------
 
-var DemoRevenueAnalysis = typeof DemoRevenueAnalysis !== "undefined" ? DemoRevenueAnalysis : (function($) {
+var DemoRevenueAnalysis = DemoRevenueAnalysis || (function($) {
 
 function render(fields, data, expRow, expColumn) {
 	DevExpress.viz.currentTheme("generic.light");

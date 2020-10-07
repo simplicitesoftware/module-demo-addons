@@ -7,7 +7,7 @@ var DemoRevenueAnalysis = DemoRevenueAnalysis || (function($) {
 function render(fields, data, expRow, expColumn) {
 	DevExpress.viz.currentTheme("generic.light");
 
-   var pivotGridChart = $("#pivotgrid-chart").dxChart({
+   var pivotGridChart = $("#DemoRevenueAnalysis-chart").dxChart({
 		commonSeriesSettings: { type: "bar" },
 		tooltip: {
 			enabled: true,
@@ -22,7 +22,7 @@ function render(fields, data, expRow, expColumn) {
 		adaptiveLayout: { width: 450 }
 	}).dxChart("instance");
 
-	var pivotGrid = $("#pivotgrid").dxPivotGrid({
+	var pivotGrid = $("#DemoRevenueAnalysis-grid").dxPivotGrid({
 		allowSortingBySummary: true,
 		allowFiltering: true,
 		showBorders: true,

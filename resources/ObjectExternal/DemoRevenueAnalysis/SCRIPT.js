@@ -2,7 +2,7 @@
 // Client side JavaScript for revenue analysis
 //-----------------------------------------------------------
 
-var DemoRevenueAnalysis = DemoRevenueAnalysis || (function($) {
+var DemoRevenueAnalysis = (function() {
 
 function render(fields, data, expRow, expColumn) {
 	DevExpress.viz.currentTheme("generic.light");
@@ -56,4 +56,4 @@ function render(fields, data, expRow, expColumn) {
 
 return { render: render };
 
-})(jQuery);
+})();

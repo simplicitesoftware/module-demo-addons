@@ -13,7 +13,7 @@
 		"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"
 	}
 }]]></mdl_url>
-		<mdl_lastupd>2020-02-28 22:02:58</mdl_lastupd>
+		<mdl_type>C</mdl_type>
 		<mdl_comment><![CDATA[[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=simplicite-modules-DemoProject&metric=alert_status)](https://sonarcloud.io/dashboard?id=simplicite-modules-DemoProject)
 
 ### Introduction
@@ -155,7 +155,6 @@ To import this module:
 		<res_code>demoaddons-module</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demoaddons-module.svg</res_image>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 	</data>
@@ -173,7 +172,6 @@ To import this module:
 		<res_code>demoaddons-module-screenshot</res_code>
 		<res_cached>0</res_cached>
 		<res_file/>
-		<res_file_compiled/>
 		<res_image>resources/Disposition/default/demoaddons-module-screenshot.png</res_image>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 	</data>
@@ -191,7 +189,6 @@ To import this module:
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoRevenueAnalysis/HTML.html</res_file>
-		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 	</data>
@@ -209,7 +206,6 @@ To import this module:
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoRevenueAnalysis/SCRIPT.js</res_file>
-		<res_file_compiled>resources/ObjectExternal/DemoRevenueAnalysis/SCRIPT.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoAddons</row_module_id.mdl_name>
 	</data>

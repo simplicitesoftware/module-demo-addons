@@ -2,12 +2,12 @@
 // Client side JavaScript for revenue analysis
 //-----------------------------------------------------------
 
-var DemoRevenueAnalysis = (function() {
+const DemoRevenueAnalysis = (function() {
 
 function render(fields, data, expRow, expColumn) {
 	DevExpress.viz.currentTheme("generic.light");
 
-   var pivotGridChart = $("#DemoRevenueAnalysis-chart").dxChart({
+   const pivotGridChart = $("#DemoRevenueAnalysis-chart").dxChart({
 		commonSeriesSettings: { type: "bar" },
 		tooltip: {
 			enabled: true,
@@ -22,7 +22,7 @@ function render(fields, data, expRow, expColumn) {
 		adaptiveLayout: { width: 450 }
 	}).dxChart("instance");
 
-	var pivotGrid = $("#DemoRevenueAnalysis-grid").dxPivotGrid({
+	const pivotGrid = $("#DemoRevenueAnalysis-grid").dxPivotGrid({
 		allowSortingBySummary: true,
 		allowFiltering: true,
 		showBorders: true,
@@ -46,7 +46,7 @@ function render(fields, data, expRow, expColumn) {
 	});
 
 	function expand() {
-		var dataSource = pivotGrid.getDataSource();
+		const dataSource = pivotGrid.getDataSource();
 		if (expRow) dataSource.expandHeaderItem("row", [expRow]);
 		if (expColumn) dataSource.expandHeaderItem("column", [expColumn]);
 	}

@@ -5,6 +5,7 @@ import com.simplicite.util.Crosstab;
 import com.simplicite.util.ExternalObject;
 import com.simplicite.util.ObjectDB;
 import com.simplicite.util.Tool;
+import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
 
 /**
@@ -12,6 +13,8 @@ import com.simplicite.util.tools.Parameters;
  */
 public class DemoRevenueAnalysis extends ExternalObject {
 	private static final long serialVersionUID = 1L;
+
+	private static final String DX_VERSION = "21.2.6";
 
 	/**
 	 * Display method
@@ -21,12 +24,11 @@ public class DemoRevenueAnalysis extends ExternalObject {
 	public Object display(Parameters params) {
 		try {
 			appendCSSIncludes(new String[] {
-				"https://cdn3.devexpress.com/jslib/18.1.3/css/dx.common.css",
-				"https://cdn3.devexpress.com/jslib/18.1.3/css/dx.light.css"
+				"https://cdn3.devexpress.com/jslib/" + DX_VERSION + "/css/dx.common.css",
+				"https://cdn3.devexpress.com/jslib/" + DX_VERSION + "/css/dx.light.css"
 			});
-			appendJSInclude(
-				"https://cdn3.devexpress.com/jslib/18.1.3/js/dx.all.js"
-			);
+			appendJSIncludes(HTMLTool.momentJS());
+			appendJSInclude("https://cdn3.devexpress.com/jslib/" + DX_VERSION + "/js/dx.all.js");
 
 			String inst = params.getParameter("inst");
 			ObjectDB obj = getGrant().getObject(inst, "DemoOrder");
@@ -43,7 +45,7 @@ public class DemoRevenueAnalysis extends ExternalObject {
 			String data = c.toJSONCubes();
 			c.clear();
 
-			return javascript(getName() + ".render(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() +");");
+			return javascript(getName() + ".render(" + fields + ", " + data + ", null, "+ Tool.getCurrentYear() + ", '" + getGrant().getDateFormat().toUpperCase() + "');");
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());
 			return e.getMessage();

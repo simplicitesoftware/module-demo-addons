@@ -4,10 +4,16 @@
 
 const DemoRevenueAnalysis = (function() {
 
-function render(fields, data, expRow, expColumn) {
+function render(fields, data, expRow, expColumn, dateFormat) {
 	DevExpress.viz.currentTheme("generic.light");
 
-   const pivotGridChart = $("#DemoRevenueAnalysis-chart").dxChart({
+	// ZZZ convert localized date fields' strings as dates
+	for (const f of fields)
+		if (f.dataType === "date")
+			for (const d of data)
+				d[f.dataField] = moment(d[f.dataField], dateFormat).toDate();
+	
+	const pivotGridChart = $("#DemoRevenueAnalysis-chart").dxChart({
 		commonSeriesSettings: { type: "bar" },
 		tooltip: {
 			enabled: true,

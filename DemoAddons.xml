@@ -90,8 +90,8 @@ To import this module:
 		<act_exec>FRT</act_exec>
 		<act_count/>
 		<act_order/>
-		<act_color/>
-		<act_color_bg/>
+		<act_color>#FFFFFF</act_color>
+		<act_color_bg>#E96E48</act_color_bg>
 	</data>
 </object>
 <object>

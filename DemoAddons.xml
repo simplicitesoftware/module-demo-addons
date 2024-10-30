@@ -80,7 +80,6 @@ To import this module:
 		<act_method/>
 		<act_script/>
 		<act_url><![CDATA[[EXPR:HTMLTool.getExternalObjectURL("DemoRevenueAnalysis", "nav=add")]]]></act_url>
-		<act_image>img/color/bars</act_image>
 		<act_confirm>0</act_confirm>
 		<act_confirm_expr/>
 		<act_confirm_ui/>
@@ -92,6 +91,7 @@ To import this module:
 		<act_order/>
 		<act_color>#FFFFFF</act_color>
 		<act_color_bg>#E96E48</act_color_bg>
+		<act_image>img/color/bars</act_image>
 	</data>
 </object>
 <object>

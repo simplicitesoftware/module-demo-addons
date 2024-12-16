@@ -2,7 +2,9 @@
 // Client side JavaScript for revenue analysis
 //-----------------------------------------------------------
 
-class DemoRevenueAnalysis {
+/* global DevExpress */
+
+class DemoRevenueAnalysis { // eslint-disable-line no-unused-vars
 	static render(fields, data, expRow, expColumn, dateFormat) {
 		DevExpress.viz.currentTheme('generic.light');
 

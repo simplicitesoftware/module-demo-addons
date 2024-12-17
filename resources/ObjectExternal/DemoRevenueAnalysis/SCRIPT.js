@@ -4,8 +4,8 @@
 
 /* global DevExpress */
 
-class DemoRevenueAnalysis { // eslint-disable-line no-unused-vars
-	static render(fields, data, expRow, expColumn, dateFormat) {
+var DemoRevenueAnalysis = DemoRevenueAnalysis || (() => {
+	function render(fields, data, expRow, expColumn, dateFormat) {
 		DevExpress.viz.currentTheme('generic.light');
 
 		// ZZZ convert localized date fields' strings as dates
@@ -60,4 +60,6 @@ class DemoRevenueAnalysis { // eslint-disable-line no-unused-vars
 
 		setTimeout(expand, 0);
 	}
-}
+
+	return { render: render };
+})();

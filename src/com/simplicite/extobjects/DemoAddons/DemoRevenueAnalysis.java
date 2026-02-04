@@ -16,10 +16,6 @@ public class DemoRevenueAnalysis extends ExternalObject {
 
 	private static final String DX_VERSION = "21.2.6";
 
-	/**
-	 * Display method
-	 * @param params Request parameters
-	 */
 	@Override
 	public Object display(Parameters params) {
 		try {

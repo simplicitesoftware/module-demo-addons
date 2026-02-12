@@ -1,9 +1,9 @@
 {
-    "date": "2026-02-04 14:01:16",
+    "date": "2026-02-12 22:03:53",
     "name": "DemoAddons",
     "format": "xml",
     "files": ["DemoAddons.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"}},
     "version": "5",
-    "platform": "5.3.83-preview"
+    "platform": "5.3.84"
 }

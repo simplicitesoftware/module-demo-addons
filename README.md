@@ -11,17 +11,20 @@
 `DemoAddons` module definition
 ==============================
 
-### Introduction
+Introduction
+------------
 
-This module contains the following addons for the demo **order management** application.:
+This module contains the following addons for the demo **order management** application:
 
 - A reporting addon based on the [DevExpress Javascript library](https://js.devexpress.com)
 
-### Prerequisites
+Prerequisites
+-------------
 
 The `Demo` module **must** be installed and configured before importing this addon module.
 
-### Import
+Import
+------
 
 To import this module:
 

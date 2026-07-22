@@ -1,9 +1,11 @@
 {
-    "date": "2026-02-12 22:03:53",
+    "date": "2026-07-22 17:28:47",
     "name": "DemoAddons",
+    "platform_revision": "5.3.92-preview",
     "format": "xml",
     "files": ["DemoAddons.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo-addons.git"}},
     "version": "5",
-    "platform": "5.3.84"
+    "branch": "master",
+    "platform": "5.3"
 }
